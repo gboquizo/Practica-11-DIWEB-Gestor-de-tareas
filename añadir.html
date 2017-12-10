@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" id="happenstance-elegantfont-css" href="./css/elegantfont.css?ver=4.7.1" type="text/css" media="all">    
+	<link rel="shortcut icon" href="favicon.ico" type="image/png"/>
+	<title>Guillermo Boquizo Sánchez Práctica 11 Gestor de tareas</title>
+	<link rel="stylesheet" href="css/gestor.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<div class="web">
+		<header class="header">
+			<h1>GESTOR DE TAREAS - AÑADIR TAREA</h1>
+		</header>
+		<nav class="menu">
+			<div id='menu'>
+				<ul>
+					<li><input type="text" name="" value="" placeholder="Buscar práctica..."></li>
+					<li><a href="index.html">INICIO</a></li>
+					<li><a href="añadir.html">AÑADIR</a></li>
+					<li><a href="daweb.html">DAWEB</a></li>
+					<li><a href="diweb.html">DIWEB</a></li>
+					<li><a href="dwec.html">DWEC</a></li>
+					<li><a href="dwes.html">DWES</a></li>
+					<li><a href="eiem.html">EIEM</a></li>
+					<li><a href="hlc.html">HLC</a></li>
+					<li><a href="licencias.html">LICENCIAS</a></li>             
+				</ul>
+			</div>
+		</nav>
+		<main class="formulario">
+			<section class= 'principal' id='formulario'><img src="images/clavo6.png">
+				<h3>Añadir práctica</h3>
+				<article>
+					<form id='form' action="#" method="post" accept-charset="utf-8">
+						<div>
+							<div>
+								<label>Nombre de la práctica:</label>
+								<input type="text" name="" value="" autofocus>
+							</div>
+							<div>
+								<label>Módulo:</label>
+								<select name="modulo" multiple>
+									<option value="DAWEB">DAWEB</option>
+									<option value="DIWEB" selected>DIWEB</option>
+									<option value="DWEC">DWEC</option>
+									<option value="DWES">DWES</option>
+									<option value="EIEM">EIEM</option>
+									<option value="HLC">HLC</option>
+								</select>
+							</div>
+							<div>
+								<label>Fecha de la práctica:</label>
+								<input type="date" name="" value="" required>
+							</div>							
+							<div>
+								<label>
+									Descripción:
+								</label>
+								<textarea placeholder="Descripción" maxlength="500"></textarea>
+							</div>
+						</div>
+						<div>
+							<input type="submit" name="" value="Enviar práctica">
+						</div>
+					</form>
+				</article>
+			</section>
+			<button onclick = " topFunction()" id="arribaañadir" title="volver arriba">&#9650;</button> 
+		</main>
+		<footer class="footer">
+			<span>Guillermo Boquizo Sánchez - Práctica 11 DIWEB 2º DAW IES Gran Capitán</span>
+			<div class="social-icon">
+				<div>
+					<a href="https://www.facebook.com/guillermo.boquizosanchez"><i id="social-fb" class="fa fa-facebook-square fa-5x icon "></i></a>
+					<a href="https://twitter.com/chekke26"><i id="social-tw" class="fa fa-twitter-square fa-5x icon"></i></a>
+					<a href="https://www.linkedin.com/in/guillermo-boquizo-s%C3%A1nchez-26152b2b/"><i id="social-li" class="fa fa-linkedin-square fa-5x icon "></i></a>
+					<a href="https://github.com/gboquizo"><i id="social-gh" class="fa fa-github-square fa-5x icon "></i></a>    
+					<a href="mailto:guillermoboquizosanchez@gmail.com?Subject=Hola%20de%20nuevo" target="_top"><i id="social-em" class="fa fa-envelope-square fa-5x icon"></i></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 20) {
+				document.getElementById("arribaañadir").style.display = "block";
+			} else {
+				document.getElementById("arribaañadir").style.display = "none";
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script> 
+</body>
+</html>
